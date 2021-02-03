@@ -1,0 +1,30 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev:electron": "SET NODE_ENV=development & webpack --config webpack.electron.config.js --mode development && electron .",
+    "dev:react": "SET NODE_ENV=development & webpack serve --config webpack.react.config.js --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "crossenv": "^0.0.2-security",
+    "electron": "^11.2.2",
+    "html-webpack-plugin": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
