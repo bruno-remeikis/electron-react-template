@@ -5,7 +5,8 @@
   "main": "./dist/main.js",
   "scripts": {
     "dev:electron": "SET NODE_ENV=development & webpack --config webpack.electron.config.js --mode development && electron .",
-    "dev:react": "SET NODE_ENV=development & webpack serve --config webpack.react.config.js --mode development"
+    "dev:react": "SET NODE_ENV=development & webpack serve --config webpack.react.config.js --mode development",
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +18,16 @@
     "@babel/preset-typescript": "^7.12.13",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
     "babel-loader": "^8.2.2",
     "crossenv": "^0.0.2-security",
+    "css-loader": "^5.0.1",
     "electron": "^11.2.2",
     "html-webpack-plugin": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
